@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="D:\PROJECTS\e-commerce\style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="top-nav-bar">
+    <div class="search-box">
+        <i class="fa-solid fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        <i class="fa-solid fa-times" id="close-btn" onclick="closemenu()"></i>
+    <img src="D:\PROJECTS\e-commerce\images\logo2.png" class="logo">
+    <input type="text" class="form-control">
+    <span class="input-group-text"><i class="fa fa-search"></i></span>
+    </div>   
+    <div class="menu-bar">
+    <ul>
+        <li><a href="#"><i class="fa-solid fa-basket-shopping"></i>cart</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Log In</a></li>
+    </ul>
+    </div>
+    </div>
+    
+    <section class="header">
+        <div class="side-menu" id="side-menu">
+        <ul>
+            <li>Makeup<i class="fa-solid fa-angle-right"></i>
+            <ul>
+                <li>Foundation</li>
+                <li>Face Powder</li>
+                <li>Lipstick</li>
+                <li>Mascara</li>
+            </ul> </li>
+            <li>Skin Care<i class="fa-solid fa-angle-right"></i>
+                <ul>
+                    <li>Moisturizers</li>
+                    <li>Cleansers</li>
+                    <li>Serums</li>
+                    <li>Suncare</li>
+                </ul></li>
+            <li>Hair Care<i class="fa-solid fa-angle-right"></i>
+                <ul>
+                    <li>Shampoo & Conditioner</li>
+                    <li>Hair color</li>
+                    <li>Hair Stylimg Tools</li>
+                    <li>Accessories</li>
+                </ul></li>
+                <li>Body Care<i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Bath & Shower</li>
+                        <li>Body Moisturizers</li>
+                        <li>Hand & Foot Care</li>
+                        <li>Mother & Baby</li>
+                    </ul></li>
+                    <li>Fragrance<i class="fa-solid fa-angle-right"></i>
+                        <ul>
+                            <li>Women's Fragrance</li>
+                            <li>Men's Fragrance</li>
+                            <li>Candles & Home Fragrance</li>
+                            <li>Fragrance Gift Sets</li>
+                        </ul></li>
+                        <li>Tools & Brushes<i class="fa-solid fa-angle-right"></i>
+                            <ul>
+                                <li>Hair Styling Tools</li>
+                                <li>SkinCare Tools</li>
+                                <li>Makeup Brushes & Tools</li>
+                                <li>Combs</li>
+                            </ul></li>
+                            <li>Now Trending<i class="fa-solid fa-angle-right"></i>
+                                <ul>
+                                    <li>Perfume</li>
+                                    <li>BB Cream</li>
+                                    <li>Lip Oil</li>
+                                    <li>Blush</li>
+                                </ul></li>
+                                <li>New Arrivals<i class="fa-solid fa-angle-right"></i>
+                                    <ul>
+                                        <li>Makeup</li>
+                                        <li>Nails</li>
+                                        <li>Skin Care</li>
+                                        <li>Body Care</li>
+                                    </ul></li>
+                                    <li>Luxury Beauty<i class="fa-solid fa-angle-right"></i>
+                                        <ul>
+                                            <li>Luxury Makeup</li>
+                                            <li>Luxury Skin Care</li>
+                                            <li>Luxury Fragrance</li>
+                                            <li>Luxury Tools</li>
+                                        </ul></li>
+                                                <li>Travel Size & Mini<i class="fa-solid fa-angle-right"></i>
+                                                    <ul>
+                                                        <li>Makeup</li>
+                                                        <li>Hair</li>
+                                                        <li>Body Care</li>
+                                                        <li>Men's Care</li>
+                                                    </ul></li>
+                                                    <li>Gifts & Value Sets<i class="fa-solid fa-angle-right"></i>
+                                                        <ul>
+                                                            <li>By Price</li>
+                                                            <li>By Category</li>
+                                                            <li>Gift Cards</li>
+                                                            <li>Gift with Purchase</li>
+                                                        </ul></li>
+        </ul>
+        </div>
+        <div class="slider">
+            <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="D:\PROJECTS\e-commerce\images\pexels-anderson-guerra-1115128.jpg" class="d-block w-100" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="D:\PROJECTS\e-commerce\images\pexels-doğu-tuncer-16749131.jpg" class="d-block w-100" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="D:\PROJECTS\e-commerce\images\pexels-valeria-boltneva-965989.jpg" class="d-block w-100" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="D:\PROJECTS\e-commerce\images\pexels-vilvah-store-17656719.jpg" class="d-block w-100" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="D:\PROJECTS\e-commerce\images\pexels-polina-tankilevitch-3735654.jpg" class="d-block w-100" >
+                  </div>
+                </div>
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#slider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- -------------- featured-categoried--------------->
+    <section class="featured-categories">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                <img src="D:\PROJECTS\e-commerce\images\pexels-adrienne-andersen-2661256.jpg">
+                </div>
+                <div class="col-md-3">
+                    <img src="D:\PROJECTS\e-commerce\images\pexels-ron-lach-8131568.jpg">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="D:\PROJECTS\e-commerce\images\pexels-mart-production-7290173.jpg">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="D:\PROJECTS\e-commerce\images\pexels-mohammadreza-babaei-15327097.jpg">
+                            </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- --------------On Scale product ------------->
+<section class="On-Sale">
+    <div class="container"> 
+        <div class="title-box">
+            <h2>On Scale</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+               <div class="product-top">
+                <a href="D:\PROJECTS\e-commerce\product.html"><img src="D:\PROJECTS\e-commerce\images\compact.jpg"></a>
+                <div class="overlay-right">
+                    <button type="button" class="btn btn-secondary" title="Quick shop">
+                    <i class="fa fa-eye"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                    <i class="fa fa-heart"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart">
+                        <i class="fa fa-shopping-cart"></i>
+                        </button>
+                </div>
+               </div> 
+               <div class="product-bottom text-center">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <h3>Face Powder</h3>
+                <h5>$99.00</h5>
+               </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-top">
+                    <a href="D:\PROJECTS\e-commerce\product.html"><img src="D:\PROJECTS\e-commerce\images\sale 2.jpg"></a>
+                 <div class="overlay-right">
+                     <button type="button" class="btn btn-secondary" title="Quick shop">
+                     <i class="fa fa-eye"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                     <i class="fa fa-heart"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Cart">
+                         <i class="fa fa-shopping-cart"></i>
+                         </button>
+                 </div>
+                </div> 
+                <div class="product-bottom text-center">
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <h3>Tinted Moisturizer</h3>
+                 <h5>$39.60</h5>
+                </div>
+             </div>
+
+             <div class="col-md-3">
+                <div class="product-top">
+                    <a href="D:\PROJECTS\e-commerce\product.html"><img src="D:\PROJECTS\e-commerce\images\sale 3.jpg"></a>
+                 <div class="overlay-right">
+                     <button type="button" class="btn btn-secondary" title="Quick shop">
+                     <i class="fa fa-eye"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                     <i class="fa fa-heart"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Cart">
+                         <i class="fa fa-shopping-cart"></i>
+                         </button>
+                 </div>
+                </div> 
+                <div class="product-bottom text-center">
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <h3>Face Serum</h3>
+                 <h5>$80.00</h5>
+                </div>
+             </div>
+
+             <div class="col-md-3">
+                <div class="product-top">
+                    <a href="D:\PROJECTS\e-commerce\product.html"><img src="D:\PROJECTS\e-commerce\images\sale 4.jpg"></a>
+                 <div class="overlay-right">
+                     <button type="button" class="btn btn-secondary" title="Quick shop">
+                     <i class="fa fa-eye"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                     <i class="fa fa-heart"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Cart">
+                         <i class="fa fa-shopping-cart"></i>
+                         </button>
+                 </div>
+                </div> 
+                <div class="product-bottom text-center">
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star-half"></i>
+                 <!-- <i class="fa fa-star-ha"></i> -->
+                 <h3>Lipstick</h3>
+                 <h5>$33.60</h5>
+                </div>
+             </div>
+
+
+        </div>
+    </div> 
+</section>
+
+<!-- -------------------New Products------------------- -->
+<section class="new-products">
+    <div class="container"> 
+        <div class="title-box">
+            <h2>New Arrivals</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+               <div class="product-top">
+                <img src="D:\PROJECTS\e-commerce\images\arr 1.jpg">
+                <div class="overlay-right">
+                    <button type="button" class="btn btn-secondary" title="Quick shop">
+                    <i class="fa fa-eye"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                    <i class="fa fa-heart"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart">
+                        <i class="fa fa-shopping-cart"></i>
+                        </button>
+                </div>
+               </div> 
+               <div class="product-bottom text-center">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <h3>Gucci Perfume</h3>
+                <h5>$999.00</h5>
+               </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-top">
+                 <img src="D:\PROJECTS\e-commerce\images\arr2.jpg">
+                 <div class="overlay-right">
+                     <button type="button" class="btn btn-secondary" title="Quick shop">
+                     <i class="fa fa-eye"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                     <i class="fa fa-heart"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Cart">
+                         <i class="fa fa-shopping-cart"></i>
+                         </button>
+                 </div>
+                </div> 
+                <div class="product-bottom text-center">
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <!-- <i class="fa fa-star-half"></i> -->
+                 <h3>Highlighter</h3>
+                 <h5>$23.60</h5>
+                </div>
+             </div>
+
+             <div class="col-md-3">
+                <div class="product-top">
+                 <img src="D:\PROJECTS\e-commerce\images\arr3.jpg">
+                 <div class="overlay-right">
+                     <button type="button" class="btn btn-secondary" title="Quick shop">
+                     <i class="fa fa-eye"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                     <i class="fa fa-heart"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Cart">
+                         <i class="fa fa-shopping-cart"></i>
+                         </button>
+                 </div>
+                </div> 
+                <div class="product-bottom text-center">
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <h3>Hair Shampoo</h3>
+                 <h5>$80.00</h5>
+                </div>
+             </div>
+
+             <div class="col-md-3">
+                <div class="product-top">
+                 <img src="D:\PROJECTS\e-commerce\images\arr5.jpg">
+                 <div class="overlay-right">
+                     <button type="button" class="btn btn-secondary" title="Quick shop">
+                     <i class="fa fa-eye"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                     <i class="fa fa-heart"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Cart">
+                         <i class="fa fa-shopping-cart"></i>
+                         </button>
+                 </div>
+                </div> 
+                <div class="product-bottom text-center">
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star-half"></i>
+                 <!-- <i class="fa fa-star-ha"></i> -->
+                 <h3>Red Lipstick</h3>
+                 <h5>$33.60</h5>
+                </div>
+             </div>
+
+             <div class="col-md-3">
+                <div class="product-top">
+                 <img src="D:\PROJECTS\e-commerce\images\arr6.jpg">
+                 <div class="overlay-right">
+                     <button type="button" class="btn btn-secondary" title="Quick shop">
+                     <i class="fa fa-eye"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                     <i class="fa fa-heart"></i>
+                     </button>
+                     <button type="button" class="btn btn-secondary" title="Add to Cart">
+                         <i class="fa fa-shopping-cart"></i>
+                         </button>
+                 </div>
+                </div> 
+                <div class="product-bottom text-center">
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <h3>Eyeshadow Palette</h3>
+                 <h5>$999.00</h5>
+                </div>
+             </div>
+ 
+             <div class="col-md-3">
+                 <div class="product-top">
+                  <img src="D:\PROJECTS\e-commerce\images\arr7.jpg">
+                  <div class="overlay-right">
+                      <button type="button" class="btn btn-secondary" title="Quick shop">
+                      <i class="fa fa-eye"></i>
+                      </button>
+                      <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                      <i class="fa fa-heart"></i>
+                      </button>
+                      <button type="button" class="btn btn-secondary" title="Add to Cart">
+                          <i class="fa fa-shopping-cart"></i>
+                          </button>
+                  </div>
+                 </div> 
+                 <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <!-- <i class="fa fa-star-half"></i> -->
+                  <h3>Bronzer</h3>
+                  <h5>$23.60</h5>
+                 </div>
+              </div>
+ 
+              <div class="col-md-3">
+                 <div class="product-top">
+                  <img src="D:\PROJECTS\e-commerce\images\arr8.jpg">
+                  <div class="overlay-right">
+                      <button type="button" class="btn btn-secondary" title="Quick shop">
+                      <i class="fa fa-eye"></i>
+                      </button>
+                      <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                      <i class="fa fa-heart"></i>
+                      </button>
+                      <button type="button" class="btn btn-secondary" title="Add to Cart">
+                          <i class="fa fa-shopping-cart"></i>
+                          </button>
+                  </div>
+                 </div> 
+                 <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <h3>Perfume</h3>
+                  <h5>$80.00</h5>
+                 </div>
+              </div>
+ 
+              <div class="col-md-3">
+                 <div class="product-top">
+                  <img src="D:\PROJECTS\e-commerce\images\arr9.jpg">
+                  <div class="overlay-right">
+                      <button type="button" class="btn btn-secondary" title="Quick shop">
+                      <i class="fa fa-eye"></i>
+                      </button>
+                      <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                      <i class="fa fa-heart"></i>
+                      </button>
+                      <button type="button" class="btn btn-secondary" title="Add to Cart">
+                          <i class="fa fa-shopping-cart"></i>
+                          </button>
+                  </div>
+                 </div> 
+                 <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  <h3>Lip Oil</h3>
+                  <h5>$33.60</h5>
+                 </div>
+              </div>
+ 
+        </div>
+    </div> 
+</section>
+
+<!-- --------------------Website features---------------------------- -->
+<section class="Website-features">
+<div class="containers">
+    <div class="row">
+        <div class="col-md-3 feature-box">
+        <img src="D:\PROJECTS\e-commerce\images\100-percent.png">
+        <div class="feature-text">
+            <p><b>100% Orginal items </b>are availabe at company</p>
+        </div>
+        </div>
+
+        <div class="col-md-3 feature-box">
+            <img src="D:\PROJECTS\e-commerce\images\return.png">
+            <div class="feature-text">
+                <p><b>Return within 30 days </b>of recieving your order.</p>
+            </div>
+            </div>
+
+            <div class="col-md-3 feature-box">
+                <img src="D:\PROJECTS\e-commerce\images\delivery-van.png">
+                <div class="feature-text">
+                    <p><b>get free delivery for every</b>order on</p>
+                </div>
+                </div>
+
+                <div class="col-md-3 feature-box">
+                    <img src="D:\PROJECTS\e-commerce\images\credit-card.png">
+                    <div class="feature-text">
+                        <p><b>Pay Online through multiple </b>options (card payment/Net banking)</p>
+                    </div>
+                    </div>
+    </div>
+</div>
+</section>
+
+<!-- -----------------Footer---------------- -->
+<section class="footer">
+    <div class="container text-center">
+    <div class="row">
+      <div class="col-md-3">
+        <h1>Useful Links</h1>
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+        <p>Return Policy</p>
+        <p>Discount Coupons</p>
+        </div>
+
+        <div class="col-md-3">
+            <h1>Company</h1>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Career</p>
+            <p>Affiliate</p>
+            </div>
+
+            <div class="col-md-3">
+                <h1>Follow Us On</h1>
+                <p><i class="fab fa-facebook"></i> Facebook</p>
+                <p><i class="fab fa-youtube"></i> YouTube</p>
+                <p><i class="fab fa-linkedin"></i> Linkedin</p>
+                <p><i class="fab fa-twitter"></i> Twitter</p>
+                </div>
+
+                <div class="col-md-3 footer-image">
+                 <h1>Download App</h1>
+                 <img src="D:\PROJECTS\e-commerce\images\pexels-brett-jordan-5444435.jpg">
+                </div>
+      </div> 
+      <hr> 
+      <p class="copyright">From Rithika Manoj Ronad<i class="fa fa-heart"></i></p>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function openmenu()
+        {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+
+        }
+        function closemenu()
+        {
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="block";
+            document.getElementById("close-btn").style.display="none";
+
+        }
+    </script>
+    
+</body>
+</html>
